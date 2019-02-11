@@ -1,0 +1,16 @@
+<?php
+/**
+ * @var $block \MageSuite\ProductHighlights\Highlights
+ */
+
+$data = $block->getProductHighlights();
+
+if (is_array($data)) {
+    foreach ($data as $attributeValue) {
+        echo '<p>' . $attributeValue . '</p>';
+    }
+} else {
+     echo $data;
+}
+
+?>
